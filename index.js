@@ -26,7 +26,7 @@ app.use(express.json());
 
 app.use('/', paintingController)
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3003
 app.listen(port, () => {
     console.log('app is running')
 })
