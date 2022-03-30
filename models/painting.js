@@ -5,8 +5,8 @@ const paintingSchema = new Schema({
     paintingTitle: { type: String, required: true },
     artistName: { type: String, required: true },
     image: { type: String},
-    panitingHight :{ type: Number},
-    panitingWidth :{ type: Number},
+    paintingHeight :{ type: Number},
+    paintingWidth :{ type: Number},
     user: {type: Schema.Types.ObjectId, ref: 'User'},
 }, { timestamps: true })
 

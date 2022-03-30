@@ -1,6 +1,14 @@
 const express = require ('express')
 const router = express()
+const multer = require('multer')
 const Painting = require('../models/painting')
+const cloudinary = require("cloudinary");
+
+cloudinary.config({
+    cloud_name: process.env.CLOUD_NAME,
+    api_key: process.env.CLOUD_API_KEY,
+    api_secret: process.env.CLOUD_API_SECRET,
+  });
 
 router.get('/' , async (req , res )=>{
     try{
